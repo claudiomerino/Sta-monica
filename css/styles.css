@@ -70,7 +70,7 @@ header.header-image .container{
 header.header-image .info-ct{
 	width: 280px;
 	text-align: center;
-	color: #fff;
+	color: #1C3B55;
 	padding-top: 40px;
 	position: relative;
 	float: right;
@@ -82,18 +82,18 @@ header.header-image .info-ct p span{
 	margin-right: 5px;
 }
 header.header-image .info-ct a.btn{
-	border: 2px solid #fff;
+	border: 2px solid #1C3B55;
 	border-radius: 5px;
 	background-color: transparent;
 	font-size: 16px;
 	font-weight: 300;
 	width: 100%;
-	color: #fff;
+	color: #1C3B55;
 	padding: 8px 10px;
 }
 header.header-image h1{
-	font-size: 50px;
-	color: #fff;
+	font-size: 35px;
+	color: #1C3B55;
 	text-align: center;
 	font-family: 'Muli', sans-serif;
 	font-weight: 300;
