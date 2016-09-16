@@ -389,7 +389,7 @@ nav.navbar-default ul.navbar-nav li a:hover{
 	border-left: 1px solid #9B9B9B;
 	font-size: 10px;
 }
-.financiamiento .cuadro-simulador > a.btn{
+.financiamiento .cuadro-simulador input[type="button"]{
 	background-color: #4499CC;
 	font-size: 16px;
 	padding: 8px 70px;
@@ -400,7 +400,7 @@ nav.navbar-default ul.navbar-nav li a:hover{
 	-webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
 	-moz-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
 }
-.financiamiento .cuadro-simulador > a.btn:hover{
+.financiamiento .cuadro-simulador input[type="button"]{
 	background-color: #3578A1;
 }
 
