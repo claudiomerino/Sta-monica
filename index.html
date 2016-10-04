@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -77,9 +78,8 @@
 
 			<div class="container">
 				<h2>PARCELAS</h2>
-				<h4>Parcelas desde 5000 mt2 ¡ bla bla  Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-				<h4>ipsum dolor sit amet, consectetur adipiscing elitipsum dolor sit amet, consectetur adipiscing elit.</h4>
-				<h4><strong>! Invierte Ahora ¡</strong></h4>
+				<h4>Inmobiliaria Santa Mónica ofrece hacer realidad el sueño de adquirir una Parcela de Agrado desde 5.000.- metros cuadrados, en su proyecto ubicado en el Valle de Elqui.<br>Nos situamos a solo 15 kilómetros de la ciudad de La Serena en la ribera Sur del valle. El proyecto de parcelación ofrece una excelente exposición solar y hermosa vista del valle mismo. Los recursos naturales de clima y suelo permiten el desarrollo de variadas especies vegetales que regadas con sistema de goteo permiten disponer de pequeña huerta para el efecto de uso consumo familiar.</h4>
+				<h4><strong>¡ Invierte Ahora !</strong></h4>
 
 				<div class="row">
 					<div class="fotos-parcelas">
@@ -103,14 +103,14 @@
 					</div>						
 				</div>
 
-				<span><img src="img/ico-inbox.png"></span>
+				
 			</div>
 
-			<div class="block-azul">
+			<!-- <span><img src="img/ico-inbox.png"></span><div class="block-azul">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
-							<h3>Consulta por Parcelas desde $5.000.000</h3>
+							<h3>Consulta por Parcelas desde $4.000.000</h3>
 						</div>
 
 						<div class="col-md-5">
@@ -122,7 +122,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div><!-- /FIN BLOQUE PARCELAS -->
 
 
@@ -134,12 +134,12 @@
 				<h4><strong>¡Una gran oportunidad para invertir!</strong></h4>
 				<h4>Parcelas desde 5.000 mts2.</h4>
 				<h4>Valor promedio de una parcela $15.500.000</h4>
-				<h4>Valor $3.000.000 a la firma de la copraventa con posibilidad de pagar en cuotas.</h4>
+				<h4>Valor $4.000.000 a la firma de la copraventa con posibilidad de pagar en cuotas.</h4>
 				<br>
 				<br>
-				<h4><strong>Saldo de Precio en 60 cuotas fijas de $350.950</strong></h4>
+				<h4><strong>Saldo de Precio en 60 cuotas fijas de $322.874</strong></h4>
 				<h4>Primera cuota a 90 días de la fecha de la compraventa.</h4>
-				
+
 				<div class="cuadro-simulador">
 					<img src="img/img-oferta.png">
 					<h4>Simula tu Crédito</h4>
@@ -160,37 +160,49 @@
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Valor Propiedad</label>
     						<div class="col-sm-6">
-      							<input type="text" class="form-control" placeholder="UF">
+
+      							<input type="text" class="form-control" placeholder="UF" name="nprice">
     						</div>
 						</div>
 
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Pie</label>
     						<div class="col-sm-6">
-      							<input type="text" class="form-control" placeholder="UF">
+      							<input type="text" class="form-control" placeholder="UF" name="payment">
     						</div>
 						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Interés</label>
+    						<div class="col-sm-6">
+      							<input type="text" class="form-control" placeholder="%" name="rate">
+    						</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Impuesto</label>
+    						<div class="col-sm-6">
+      							<input type="text" class="form-control" placeholder="%" name="tax">
 
+    						</div>
+						</div>
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Plazo</label>
     						<div class="col-sm-6">
-      							<div class="dropdown">
-  									<button class="btn btn-default" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    									Elija una Opción
-    									<span class="glyphicon glyphicon-triangle-bottom"></span>
-  									</button>
-  									<ul class="dropdown-menu" aria-labelledby="dLabel">
-   										<li><a href="#">Opción 01</a></li>
-   										<li><a href="#">Opción 02</a></li>
-   										<li><a href="#">Opción 03</a></li>
-   										<li><a href="#">Opción 04</a></li>
-  									</ul>
-								</div>
+
+      							<select class="form-control" name="term">
+      								<option value="0" disabled selected>Elige una opción</option>
+   									<option value="36">36 meses</option>
+   									<option value="48">48 meses</option>
+   									<option value="60">60 meses</option>
+  								</select>
+
     						</div>
-						</div>						
+						</div>
+					<input name="Input" type="button" value="Simular Crédito" onclick="calcpayments()"class="btn btn-default"/>
+					<div class="row">
+					<div class="col-md-6" id="monthlypayment"></div><h3 class="col-md-6">UF</h4>
+					</div>
 					</form>
-					<a href="#" class="btn btn-default">Simular Crédito</a>
-				</div>
+
 				
 				<a href="#" class="btn btn-default">Consultar por Crédito Directo</a>
 			</div>
@@ -230,12 +242,7 @@
 						<h4>Edificio Comercial Buale</h4>
 						<h4>Fono: +56 51 222 2625</h4>
 						<h4>Cel: +569 9219 5871</h4>
-						<br>
-						<h4>Santiago</h4>
-						<h4>Avenida Tobalaba 4033,</h4>
-						<h4>Oficina A Providencia.</h4>
-						<h4>Fono: +56 2 2277 74 41</h4>
-						<br>
+						
 						<h4><span><img src="img/ico-inbox.png"></span> ventas@haciendasantamonica.cl</h4>
 					</div>
 
@@ -254,7 +261,41 @@
 
 
 	</div><!-- /FIN WRAPPER -->
+<script>
+function calcpayments()
+{
 
-	    
+//Las cinco variables utilizadas en la fórmula 
+
+var nprice=document.forms[0].nprice.value*1;
+var salestax=document.forms[0].tax.value*1;
+var interest=document.forms[0].rate.value*1;
+var dpayment=document.forms[0].payment.value*1;
+
+var t;
+
+//Usamos un bucle para seleccionar el plazo de pagos
+
+for (i=0; i<document.forms[0].term.options.length; i++)
+
+{
+
+if (document.forms[0].term.options[i].selected)
+t = document.forms[0].term.options[i].value*1;
+}
+
+//Esta es la fórmula que realiza el cálculo
+
+var result=(nprice*(salestax/100 +1)-dpayment)*((interest/100)/12) / (1-Math.pow((1+(interest/100)/12),(-t)));
+
+result=Math.round(result*100) /100;
+
+
+//Esta última línea muestra el resulado dentro del casillero
+
+document.getElementById("monthlypayment").innerHTML=result;
+
+}
+</script>
 </body>
 </html>
