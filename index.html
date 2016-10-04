@@ -28,7 +28,7 @@
 					<div class="col-sm-4 col-sm-push-8 col-xs-12">
 						<div class="info-ct">
 							<p><span class="glyphicon glyphicon-earphone"></span> +56 51 222 2625 | +56 9 9219 5871</p>
-							<a class="btn btn-default" href="#">MÁS INFORMACIÓN</a>
+							<a class="btn btn-default" href="#contact">MÁS INFORMACIÓN</a>
 						</div>						
 					</div>
 
@@ -51,29 +51,29 @@
 			<div class="container">
 				<!--a  class="navbar-brand" href="#">brand</a-->
 				<ul class="nav navbar-nav">
-					<li><a href="#">El Proyecto</a></li>
-					<li><a href="#">Parcelas</a></li>
-					<li><a href="#">Financiamiento</a></li>
-					<li><a href="#">Contacto</a></li>
+					<li><a href="#proyecto">El Proyecto</a></li>
+					<li><a href="#parcelas">Parcelas</a></li>
+					<li><a href="#financiamiento">Financiamiento</a></li>
+					<li><a href="#contact">Contacto</a></li>
 				</ul>
 			</div>
 		</nav>
 
 
 		<!-- BLOQUE EL PROYECTO -->
-		<div class="proyecto">
+		<div id="proyecto" class="proyecto">
 			<div class="container">
 				<h2>EL PROYECTO</h2>
 				<h4>Ubicada a sólo 15 Kms de La Serena, la hacienda Santa Mónica se compone de más de 100 parcelas con una gran plusvalía y proyección.</h4>
 				<h4>El privilegiado clima de esta región, le permitirá gozar de ella en toda temporada siendo así una interesante alternativa de inversión.</h4>
 
-				<a href="#" class="btn btn-default">Pedir Más Información</a>
+				<a href="#contact" class="btn btn-default">Pedir Más Información</a>
 			</div>
 		</div><!-- /FIN BLQUE EL PROYECTO -->
 		
 
 		<!-- BLOQUE PARCELAS -->
-		<div class="parcelas">
+		<div id="parcelas" class="parcelas">
 			<img src="img/fondo-parcelas.jpg">
 
 			<div class="container">
@@ -127,7 +127,7 @@
 
 
 		<!-- BLOQUE FINANCIAMIENTO -->
-		<div class="financiamiento">
+		<div id="financiamiento" class="financiamiento">
 			<img src="img/fondo-financiamiento.jpg">
 			<div class="container">
 				<h2>FINANCIAMIENTO</h2>
@@ -210,7 +210,7 @@
 
 
 		<!-- BLOQUE CONTACTO -->
-		<div class="contacto">
+		<div id="contact" class="contacto">
 			<img src="img/fondo-contacto.jpg">
 
 			<div class="container">
@@ -218,18 +218,22 @@
 				<div class="row">
 					<div class="col-sm-8 col-formu">
 						<h4>Ponte en contacto con nosotros</h4>
-						<form>
+						<form action="https://formspree.io/jair@elbuencamino.com"
+						      method="POST">
 							<div class="form-group">
-								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tu nombre">
+								<input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Tu nombre">
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tu e-mail">
+								<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Tu e-mail">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tu teléfono">
+								<input type="text" name="phone" class="form-control" id="exampleInputEmail1" placeholder="Tu teléfono">
 							</div>
 							<div class="form-group">
-								<textarea class="form-control" rows="3" placeholder="Tu mensaje"></textarea>
+								<textarea class="form-control" name="message" rows="3" placeholder="Tu mensaje"></textarea>
+							</div>
+							<div class="form-group">
+							<input type="submit" class="btn btn-default" value="Send">
 							</div>
 						</form>
 					</div>
@@ -296,6 +300,21 @@ result=Math.round(result*100) /100;
 document.getElementById("monthlypayment").innerHTML=result;
 
 }
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 </script>
 </body>
 </html>
