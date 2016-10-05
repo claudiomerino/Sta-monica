@@ -145,22 +145,9 @@
 				<div class="cuadro-simulador">
 					<img src="img/img-oferta.png">
 					<h4>Simula tu Crédito</h4>
-
 					<form class="form-horizontal">
 						<div class="form-group">
-							<label class="col-sm-4 control-label">Tipo de Parcela</label>
-    						<div class="col-sm-8">
-        						<label class="radio-inline">
-  									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Urbanizable
-								</label>
-								<label class="radio-inline">
-  									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option2"> No Urbanizable
-								</label>
-    						</div>
-  						</div>
-
-						<div class="form-group">
-							<label class="col-sm-4 control-label">Valor Propiedad</label>
+							<label class="col-sm-4 control-label">Valor Terreno</label>
     						<div class="col-sm-6">
       							<input type="text" class="form-control" placeholder="UF" name="nprice">
     						</div>
@@ -175,21 +162,13 @@
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Interés</label>
     						<div class="col-sm-6">
-      							<input type="text" class="form-control" placeholder="%" name="rate">
-    						</div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-4 control-label">Impuesto</label>
-    						<div class="col-sm-6">
-      							<input type="text" class="form-control" placeholder="%" name="tax">
-
+    							<input type="text" class="form-control" placeholder="%" name="rate">
     						</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Plazo</label>
     						<div class="col-sm-6">
-
-      							<select class="form-control" name="term">
+	    						<select class="form-control" name="term">
       								<option value="0" disabled selected>Elige una opción</option>
    									<option value="36">36 meses</option>
    									<option value="48">48 meses</option>
@@ -199,7 +178,7 @@
 						</div>
 					<input name="Input" type="button" value="Simular Crédito" onclick="calcpayments()"class="btn btn-default"/>
 					<div class="row">
-					<div class="col-md-6" id="monthlypayment"></div><h3 class="col-md-6">UF</h4>
+					<div class="col-md-6" id="monthlypayment"></div><h3 class="col-md-6">$</h4>
 					</div>
 					</form>
 				</div>
