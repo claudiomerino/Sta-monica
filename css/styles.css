@@ -337,7 +337,7 @@ nav.navbar-default ul.navbar-nav li a:hover{
 	border-radius: 10px;
 	border: 2px solid #9B9B9B;
 	position: relative;
-	margin: 190px auto 0px;
+	margin: 190px auto 50px;
 	padding: 80px 100px 40px;
 }
 .financiamiento .cuadro-simulador > img{
@@ -389,7 +389,9 @@ nav.navbar-default ul.navbar-nav li a:hover{
 	border-left: 1px solid #9B9B9B;
 	font-size: 10px;
 }
-.financiamiento .cuadro-simulador input[type="button"]{
+
+.financiamiento .cuadro-simulador > a.btn,
+.contacto input[type="submit"]{
 	background-color: #4499CC;
 	font-size: 16px;
 	padding: 8px 70px;
@@ -400,7 +402,10 @@ nav.navbar-default ul.navbar-nav li a:hover{
 	-webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
 	-moz-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
 }
-.financiamiento .cuadro-simulador input[type="button"]{
+
+.financiamiento .cuadro-simulador > a.btn:hover,
+.contacto input[type="submit"]:hover{
+
 	background-color: #3578A1;
 }
 
@@ -468,6 +473,9 @@ nav.navbar-default ul.navbar-nav li a:hover{
 	color: #1C3B55;
 	font-weight: 600;
 	height: 40px;
+}
+.contacto .col-formu .form-group input[type="submit"] {
+	color: white;
 }
 .contacto .col-formu .form-group textarea{
 	border-radius: 0;
@@ -684,7 +692,6 @@ nav.navbar-default ul.navbar-nav li a:hover{
 	}
 
 }
-
 
 
 
