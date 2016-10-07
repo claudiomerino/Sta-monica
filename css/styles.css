@@ -306,7 +306,45 @@ nav.navbar-default ul.navbar-nav li a:hover{
 .parcelas .block-azul a.btn:hover{
 	background-color: #C2711C;
 }
+/*corretaje*/
+.corretaje{
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 100px;
+	z-index: 3;
+}
+.corretaje > img{
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top:50%;
+	left: 50%;
+	width: 2000px;
+}
+.corretaje .container{
+	text-align: center;
+	color: #1C3B55;
+	position: relative;
+}
+.corretaje .modulo{
+	margin: 100px auto;
+	padding: 40px 40px;
+	border-radius: 10px;
+	background: rgba(255,255,255,0.5);
+}
+.corretaje h2{
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	padding: 10px 0px;
+	border-bottom: 2px solid #1C3B55;
+	display: inline-block;
+	margin: 30px 0 40px;
+	font-family: 'Muli', sans-serif;
+}
+.corretaje .col-md-6.col-lg-6{
+	margin-top:15px;
+}
 
+/*Financiamiento*/
 .financiamiento {
 	position: relative;
 	padding-bottom: 100px;
@@ -549,6 +587,10 @@ nav.navbar-default ul.navbar-nav li a:hover{
     	transform: translateX(-50%);
     	top: 0%;
 	}
+	.corretaje > img {
+    	transform: translateX(-50%);
+    	top: 0%;
+	}
 	.proyecto {
 		padding-bottom: 70px;
 	}
@@ -623,6 +665,10 @@ nav.navbar-default ul.navbar-nav li a:hover{
 	}
 
 	.financiamiento > img {
+    	transform: translateX(-50%);
+    	top: 0%;
+	}
+	.corretaje > img {
     	transform: translateX(-50%);
     	top: 0%;
 	}
