@@ -550,7 +550,62 @@ nav.navbar-default ul.navbar-nav li a:hover{
 .contacto .col-siguenos .redes-sociales a:hover{
 	opacity: 0.75;
 }
+.corretaje__description,
+.corretaje__list {
+	margin: 0 auto;
+	max-width: 480px;
+}
 
+.corretaje__description:nth-of-type(2) {
+	margin-top: 3rem
+}
+
+.corretaje__list {
+	margin: 1rem auto 3rem;
+}
+.corretaje__list p {
+	font-weight: bold;
+	line-height: 1.2;
+	margin: 3rem 0 1rem;
+	text-align: left;
+}
+.corretaje__list li {
+	text-align: left;
+}
+
+.corretaje__row .number {
+	background-color: #16cdd1;
+	border-radius: 50%;
+	border: 2px solid white;
+	color: white;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bolder;
+	height: 44px;
+	line-height: 38px;
+	text-align: center;
+	width: 44px;
+}
+.corretaje__row .heading {
+	margin-bottom: 2rem;
+}
+.corretaje__row .title {
+	display: inline-block;
+	line-height: 1;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.corretaje__model__list li {
+	list-style: none;
+	padding-left: 3rem;
+	position: relative;
+}
+.corretaje__model__list span {
+	color: #16cdd1;
+	left: 0;
+	position: absolute;
+}
 
 @media (max-width: 1200px) {
 	.parcelas .fotos-parcelas .img-parcela{
