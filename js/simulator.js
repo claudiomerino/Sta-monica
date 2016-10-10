@@ -50,9 +50,9 @@ $( document ).ready( function () {
 		function paymentFn( fee ) {
 			$payment = result * fee;
 			$payment = $payment.format(2);
-			$resultPayment.html( '$ ' + $payment );			
+			$resultPayment.html( '$ ' + $payment );
+			$calcPayments.val( 'Volver a simular' );
 		}
-
 
 	})
 
