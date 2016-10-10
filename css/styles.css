@@ -607,6 +607,12 @@ nav.navbar-default ul.navbar-nav li a:hover{
 	position: absolute;
 }
 
+.help-block {
+	font-size: 12px;
+	margin-bottom: 0;
+	text-align: left;
+}
+
 @media (max-width: 1200px) {
 	.parcelas .fotos-parcelas .img-parcela{
 		height: 195px;
