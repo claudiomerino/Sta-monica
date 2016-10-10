@@ -26,40 +26,31 @@ $( document ).ready( function () {
 		,	$payment
 		,	fee
 
-		console.log( 'land', $land );
-		console.log( 'foot', $foot );
-		console.log( 'term', $term );
-		console.log( 'result', result );
-
 		if( $term == 12 ) {
 			fee = 0.09398;
-			$payment = result * fee;
-			$payment = $payment.format(2);
-			$resultPayment.html( '$ ' + $payment );
+			paymentFn( fee );
 		}
 		else if( $term == 24 ) {
 			fee = 0.052274;
-			$payment = result * fee;
-			$payment = $payment.format(2);
-			$resultPayment.html( '$ ' + $payment );			
+			paymentFn( fee );
 		}
 		else if( $term == 36 ) {
 			fee = 0.038606;
-			$payment = result * fee;
-			$payment = $payment.format(2);
-			$resultPayment.html( '$ ' + $payment );
+			paymentFn( fee );
 		}
 		else if( $term == 48 ) {
 			fee = 0.031942;
-			$payment = result * fee;
-			$payment = $payment.format(2);
-			$resultPayment.html( '$ ' + $payment );
+			paymentFn( fee );
 		}
 		else if( $term == 60 ) {
 			fee = 0.028076;
+			paymentFn( fee );
+		}
+
+		function paymentFn( fee ) {
 			$payment = result * fee;
 			$payment = $payment.format(2);
-			$resultPayment.html( '$ ' + $payment );
+			$resultPayment.html( '$ ' + $payment );			
 		}
 
 
