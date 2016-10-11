@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>HACIENDA SANTA MÓNICA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,600,300,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="css/styles.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+</head>
+
+<body class="home">
+	<div class="wrapper">
+		
+		<!-- HEADER IMAGEN -->
+		<header class="header-image">
+			<img class="fondo" src="img/img-header.jpg">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-sm-push-8 col-xs-12">
+						<div class="info-ct">
+						</div>						
+					</div>
+
+					<div class="col-sm-4 col-sm-offset-4 col-sm-pull-4 col-xs-12 div-logo">
+						<img src="img/logo.svg">
+					</div>					
+
+					<div class="col-xs-12">
+						<h1>Hemos recibido tu correo</h1>
+						<h4>Muchas gracias!</h4>
+						<p class="text-center"><button class="btn btn-default"> <a href="index.html">volver al sitio</a></button></p>
+					</div>
+				</div>
+			</div>
+		</header>	
+
+	</div><!-- /FIN WRAPPER -->
+<script>
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+	<script src="js/simulator.js"></script>
+</body>
+</html>
