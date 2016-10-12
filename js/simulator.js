@@ -49,7 +49,7 @@ $( document ).ready( function () {
 
 		function paymentFn( fee ) {
 			$payment = result * fee;
-			$payment = $payment.format(1);
+			$payment = $payment.format();
 			$resultPayment.html( '$ ' + $payment );
 			$calcPayments.val( 'Volver a simular' );
 		}
