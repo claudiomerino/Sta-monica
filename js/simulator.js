@@ -1,6 +1,6 @@
 /**
  * Number.prototype.format(n, x)
- * 
+ *
  * @param integer n: length of decimal
  * @param integer x: length of sections
  */
@@ -49,7 +49,7 @@ $( document ).ready( function () {
 
 		function paymentFn( fee ) {
 			$payment = result * fee;
-			$payment = $payment.format(2);
+			$payment = $payment.format(1);
 			$resultPayment.html( '$ ' + $payment );
 			$calcPayments.val( 'Volver a simular' );
 		}
